@@ -8,22 +8,29 @@ body {
 header{
 	height: 46px;
 	background-color: #292f33;
+	position:fixed;
+	top:0px;
+	width:100%;
 }
 
 
-#navigation { 
+
+header #navigation { 
 	display: inline-block;
 	line-height: 46px; 
 	margin:0 30px 0 30px; 
 	display:block; width: 397px; 
-	text-align: left;  
+	text-align: left; 
+	position:fixed;
+	top:0px;
+	width:100%;
 	}
 
 
 #topright{
 	display: inline-block;
 	margin:0 30px 0 30px; 
-	position:absolute;
+	position:fixed;
 	top:0px;
 	right:0px;
 	width:397px;
@@ -40,7 +47,11 @@ header{
 	text-align: left
 }
 
+.form-search {
+	margin-right: 20px
+}
 
+ul
 {
 list-style-type:none;
 margin:0;
@@ -49,6 +60,8 @@ padding:0;
 
 li  {
 	display:inline;
+	margin-right: 20px
+
 }
 
 li a {
@@ -56,12 +69,41 @@ li a {
 	color: grey;
 }
 
-.miniprofile{ 
+.mini-profile{ 
+	display: inline-block;
+	margin-top: 60px;
 	float:left;
-	width:100px
+	width:35%;
+	height: 500px;
+	background-color: yellow;
+
 }
 
-#tweetfeed {
+#tweet-feed {
+	display: inline-block;
 	float:right;
+	margin-top: 60px;
+	padding: 20px;
+	width: 60%;
+	height: 700px;
+	background-color: green;
+}
+
+.feed-title {
+	display:block;
+	height:20px;
+	padding-top: 20px;
+	background-color: white;
 	width:600px;
 }
+
+.mini-profile-name {
+	padding-left: 150px;
+}
+
+.new-tweet{
+	width:300px;
+	height: 30px;
+}
+
+
