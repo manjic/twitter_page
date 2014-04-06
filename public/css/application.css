@@ -1,0 +1,67 @@
+body {
+	 margin:0px;
+   padding:0px;
+	background-color: #B8DBFF
+
+}
+
+header{
+	height: 46px;
+	background-color: #292f33;
+}
+
+
+#navigation { 
+	display: inline-block;
+	line-height: 46px; 
+	margin:0 30px 0 30px; 
+	display:block; width: 397px; 
+	text-align: left;  
+	}
+
+
+#topright{
+	display: inline-block;
+	margin:0 30px 0 30px; 
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:397px;
+	text-align: right;
+}
+
+#topright li {
+	display: inline-block;
+}
+
+#searchbox{
+	display: inline-block;
+	line-height: 46px;	
+	text-align: left
+}
+
+
+{
+list-style-type:none;
+margin:0;
+padding:0;
+}
+
+li  {
+	display:inline;
+}
+
+li a {
+	text-decoration: none;
+	color: grey;
+}
+
+.miniprofile{ 
+	float:left;
+	width:100px
+}
+
+#tweetfeed {
+	float:right;
+	width:600px;
+}
