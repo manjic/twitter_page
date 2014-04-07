@@ -39,7 +39,7 @@
 
 				<div id="searchbox" >
 					<form class="form-search">
-  						<input type="text" placeholder="Search" />
+  						<input class="topsearch"type="text" placeholder="Search" />
 						</form>
 				</div>
 
@@ -59,9 +59,16 @@
 	<div id="tweet-feed">
 
 			<div class="feed-title">Tweets</div>
-			<div class="tweet-feed-footer">
-				<a href="/refresh">Refresh feed</a>
+			<div id="tweets">
+				<ul>
+					<li class="tweet-list">tweet1</li>
+					<li class="tweet-list">tweet2</li>
+					<li class="tweet-list">tweet3</li>
+					<li class="tweet-list">tweet4</li>
+				</ul>
 			</div>
+
+			<button class="refresh-feed">Refresh</button>
 	</div>
 	
 	<div class="mini-profile">
@@ -71,7 +78,7 @@
 			</div>
 
 			<div>
-				  <ul>
+				  <ul class="profile-stats">
 		        <li class="tweet-number">
 		          <a href="/tweets" >2000 tweets</a>
 		        </li>
@@ -107,12 +114,22 @@
 
 	
 
-	<script src="https://code.jquery.com/jquery-2.1.0.min.js"type="text/javascript" ></script>
+	<script 
+		src="https://code.jquery.com/jquery-2.1.0.min.js">
+	</script>
+	<script> 
+		$(document).ready(function(){
+			$('.refresh-feed').on('click', function() {
+					var newTweets = $('<li class="tweet-list">tweet1</li>' + '<li class="tweet-list">tweet1</li>')
+
+					$('#tweets').append(newTweets).delay(5s);
+
+			});
+  		
+		})
+
+	</script>
 
 </body>
 </html>
-
-
-
-
 
